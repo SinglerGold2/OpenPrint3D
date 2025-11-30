@@ -1,0 +1,90 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Plus3",
+
+  "manufacturer": "Qidi Tech",
+  "model": "X-Plus3",
+  "variant": "Stock",
+
+  "build_volume": {
+    "x": 280,
+    "y": 280,
+    "z": 270,
+    "shape": "rectangular",
+    "origin": "front_left"
+  },
+
+  "kinematics": "corexy",
+
+  "axes": {
+    "x": {
+      "max_speed": 500,
+      "max_accel": 20000
+    },
+    "y": {
+      "max_speed": 500,
+      "max_accel": 20000
+    },
+    "z": {
+      "max_speed": 30,
+      "max_accel": 500
+    }
+  },
+
+  "extruders": [
+    {
+      "id": "tool0",
+      "nozzle_diameter": 0.4,
+      "max_temp": 300,
+      "min_temp": 170,
+      "retraction_supported": true
+    }
+  ],
+
+  "bed": {
+    "heated": true,
+    "max_temp": 120,
+    "surface_type": "PEI-coated"
+  },
+
+  "chamber": {
+    "heated": false,
+    "max_temp": 0,
+    "passive": true
+  },
+
+  "firmware": {
+    "flavor": "klipper",
+    "identifier": "Qidi-X-Plus3-stock"
+  },
+
+  "network": {
+    "has_wifi": true,
+    "has_ethernet": false,
+    "supports_lan_api": true
+  },
+
+  "external_ids": {
+    "manufacturer_sku": "XPLUS3-BASE-001"
+  },
+
+  "links": {
+    "datasheet": "https://eu.qidi3d.com/de/pages/qidi-x-plus-3",
+    "manufacturer": "https://www.qidi3d.com/"
+  },
+
+  "tags": [
+    "enclosed",
+    "corexy",
+    "high_speed",
+    "mid_size"
+  ],
+
+  "notes": "Base profile for the stock Qidi X-Plus3. Use process + filament profiles to generate slicer-specific configs.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}
