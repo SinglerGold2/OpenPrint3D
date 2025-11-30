@@ -1,0 +1,90 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Smart3",
+
+  "manufacturer": "Qidi Tech",
+  "model": "X-Smart3",
+  "variant": "Stock",
+
+  "build_volume": {
+    "x": 175,
+    "y": 180,
+    "z": 170,
+    "shape": "rectangular",
+    "origin": "front_left"
+  },
+
+  "kinematics": "corexy",
+
+  "axes": {
+    "x": {
+      "max_speed": 500,
+      "max_accel": 20000
+    },
+    "y": {
+      "max_speed": 500,
+      "max_accel": 20000
+    },
+    "z": {
+      "max_speed": 30,
+      "max_accel": 500
+    }
+  },
+
+  "extruders": [
+    {
+      "id": "tool0",
+      "nozzle_diameter": 0.4,
+      "max_temp": 300,
+      "min_temp": 170,
+      "retraction_supported": true
+    }
+  ],
+
+  "bed": {
+    "heated": true,
+    "max_temp": 120,
+    "surface_type": "PEI-coated"
+  },
+
+  "chamber": {
+    "heated": false,
+    "max_temp": 0,
+    "passive": true
+  },
+
+  "firmware": {
+    "flavor": "klipper",
+    "identifier": "Qidi-X-Smart3-stock"
+  },
+
+  "network": {
+    "has_wifi": true,
+    "has_ethernet": false,
+    "supports_lan_api": true
+  },
+
+  "external_ids": {
+    "manufacturer_sku": "XSMART3-BASE-001"
+  },
+
+  "links": {
+    "datasheet": "https://eu.qidi3d.com/de/pages/qidi-x-smart-3",
+    "manufacturer": "https://www.qidi3d.com/"
+  },
+
+  "tags": [
+    "desktop",
+    "corexy",
+    "high_speed",
+    "compact"
+  ],
+
+  "notes": "Base profile for the stock Qidi X-Smart3. Use process + filament profiles to generate slicer-specific configs.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}
